@@ -349,6 +349,8 @@ def login_user():
   
 #   if not auth or not auth.username or not auth.password:  
 #      return make_response('could not verify', 401, {'WWW.Authentication': 'Basic realm: "login required"'})    
+  if user is None:
+    return render_template('login.html')
 
   user = Users.query.filter_by(name=name).first()   
 
