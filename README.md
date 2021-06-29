@@ -64,3 +64,7 @@ def token_required(f):
 If unthorized user access route /, then will be redirected to login.html, after successful authentication, the access token is stored in session for later use.
 
 In /login method, the username/password taken from form data are compared with the encoded name/password in table users.
+
+## add user for jwt authentication
+run add_user.py to add authorized user for authentication, you can specify the 'SECRET_KEY', remember also modify the corresponding value in yolo_stream.py too. 
+
