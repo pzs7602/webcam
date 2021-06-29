@@ -82,7 +82,6 @@ def gstreamer_pipeline(
 app = Flask(__name__)
 
 app.config['SECRET_KEY']='YOUR_SECRET_KEY_HERE'
-#app.config['SQLALCHEMY_DATABASE_URI']='sqlite://///home/pzs/pzs/webcam/users.db' 
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///./users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True 
 
